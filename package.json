@@ -1,0 +1,28 @@
+{
+  "name": "blood-donor-finder",
+  "version": "1.0.0",
+  "description": "Blood Donor Finder - public website + separate admin dashboard + API",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "node server/test.js",
+    "backup": "node server/backup.js backup",
+    "restore": "node server/backup.js restore",
+    "clean-demo": "node server/clean.js",
+    "clean-all": "node server/clean.js --all"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.14",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.16",
+    "pg": "^8.23.1"
+  }
+}
